@@ -1,5 +1,5 @@
 let custoProduto = 250;
-let vendaProduto = 480;
+let vendaProduto = -480;
 
 if (custoProduto < 0 || vendaProduto < 0) {
     console.log('Erro: Valores Inválidos');
