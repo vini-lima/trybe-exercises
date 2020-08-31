@@ -1,4 +1,4 @@
-let salarioBruto = 3000.00;
+let salarioBruto = 6500.00;
 let salarioAliquota;
 let salarioLiquido;
 
