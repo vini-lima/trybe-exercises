@@ -86,6 +86,15 @@
           tagP.innerHTML = tagP.innerHTML.toUpperCase();
         }
         modifyText();
+
+        // Exercise 6
+        function paragraphShow() {
+          let displayParagraph = document.getElementsByTagName('p');
+          for (let index = 0; index < displayParagraph.length; index += 1) {
+            console.log(displayParagraph[index].innerHTML);
+          }
+        }
+        paragraphShow();
     </script>
   </body>
 </html>
