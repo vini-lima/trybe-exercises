@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Exercise 1
+      const title = document.createElement('h1');
+      title.innerHTML = 'Exercícios Trybe'; 
+      document.body.appendChild(title);
+
+      // Exercise 2
+      const elementDiv = document.createElement('div');
+      elementDiv.className = 'main-content';
+      document.body.appendChild(elementDiv);
+
+      // Exercise 3
+      const elementDiv2 = document.createElement('div');
+      elementDiv2.className = 'center-content';
+      elementDiv.appendChild(elementDiv2);
+
+      // Exercise 4
+      const paragraph = document.createElement('p');
+      paragraph.innerHTML = 'Boooooooooora! Go Trybe!';
+      elementDiv2.appendChild(paragraph);
+
+      // Exercise 5
+      const elementDiv3 = document.createElement('div');
+      elementDiv3.className = 'left-content';
+      elementDiv.appendChild(elementDiv3);
+
+      // Exercise 6
+      const elementDiv4 = document.createElement('div');
+      elementDiv4.className = 'right-content';
+      elementDiv.appendChild(elementDiv4);
+
+      // Exercise 7
+      const image = document.createElement('img');
+      image.src = 'https://picsum.photos/200';
+      image.className = 'small-image';
+      elementDiv3.appendChild(image);
+
+      // Exercise 8
+      const list = document.createElement('ul');
+      elementDiv4.appendChild(list);
+      const array = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let index = 0; index < array.length; index += 1) {
+        const lines = document.createElement('li');
+        lines.innerHTML = array[index];
+        list.appendChild(lines);
+      }
+
+      // Exercise 9
+      for (let index = 1; index <= 3; index += 1) {
+        const elementH3 = document.createElement('h3');
+        elementH3.innerHTML = 'Show ' + index;
+        elementDiv.appendChild(elementH3); 
+      }
+
+      // Exercise 10
+      const title2 = document.getElementsByTagName('h1')[0];
+      title2.className = 'title';
+
+      // Exercise 11
+      const titlesH3 = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index += 1) {
+          titlesH3[index].className = 'description';
+      }
+
+      // Exercise 12
+      const rmelementDiv3 = document.getElementsByClassName('left-content')[0];
+      elementDiv.removeChild(rmelementDiv3);
+
+      // Exercise 13
+      const centralDiv = document.getElementsByClassName('right-content')[0];
+      centralDiv.style.marginRight = 'auto';
+
+      // Exercise 14
+      const colorChange = document.getElementsByClassName('center-content')[0];
+      colorChange.parentNode.style.backgroundColor = 'green';
+
+      // Exercise 15
+      list.lastChild.remove();
+      list.lastChild.remove(); 
+
+    </script>
+  </body>
+</html>
