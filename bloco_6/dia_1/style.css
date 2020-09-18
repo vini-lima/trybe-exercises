@@ -34,10 +34,11 @@ body {
   margin-left: auto;
 }
 
-input[type = 'text'] {
+input[type = 'text'], textarea  {
   border: 1px solid rgb(214, 217, 220);
   border-radius: 3px;
   width: 100%;
+  background-color: white;
 }
 
 input {
@@ -52,4 +53,12 @@ input {
 p {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  width: 100px;
 }

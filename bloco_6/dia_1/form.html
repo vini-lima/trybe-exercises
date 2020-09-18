@@ -29,11 +29,23 @@
             </select>
             <p class="paragraph">Tipo:</p>
             <label for="tipo1"><input type="radio" name="tipo" id="tipo1" required="required">Apartamento</label>
-            <label for="tipo2"><input type="radio" name="tipo" id="tipo2" required="required">Apartamento</label>
+            <label for="tipo2"><input type="radio" name="tipo" id="tipo2" required="required">Casa</label>
+        </fieldset><br>
+        <fieldset class="form-row">
+            <legend>Último Emprego</legend>
+            <label for="resumo">Resumo do Currículo</label>
+            <textarea name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" required="required"></textarea>
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" id="cargo" maxlength="40" required="required">
+            <label for="descricao-cargo">Descrição do Cargo:</label>
+            <input type="text" name="descricao-cargo" id="descricao-cargo" maxlength="500" required="required">
+            <label for="data">Data:</label>
+            <input type="text" name="data" id="data" maxlength="10" required="required">
         </fieldset>
-        <fieldset>
-
-        </fieldset>
+        <div class="buttons">
+            <button type="submit" class="submit-form">Submit</button>
+            <button class="limpar">Limpar</button>
+        </div>
     </form>
     <script src="script.js"></script>
 </body>
