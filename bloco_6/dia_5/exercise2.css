@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 15px;
+    background-color: rgb(139, 126, 141);
+  }
+
+  h1 {
+    font-size: 22px;
+    color: rgb(17, 19, 133);
+  }
+
+  h2 {
+    font-size: 18px;
+    color: rgb(17, 19, 133);
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(31, 97, 128);
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  body {
+    background-color: violet;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: rgb(104, 24, 209);
+    padding: 20px;
+  }
+}

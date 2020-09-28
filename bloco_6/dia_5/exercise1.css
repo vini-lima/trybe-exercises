@@ -1,0 +1,42 @@
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  body {
+    background-color: gray;
+    margin: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 10px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  img {
+    margin: 20px 5px 20px 5px;
+  }
+}
